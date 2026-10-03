@@ -1,0 +1,14 @@
+name: "model-provider-router"
+description: "Dynamically routes coding tasks and reasoning queries across configured local and cloud LLM providers."
+input_schema:
+  type: object
+  properties:
+    prompt_payload:
+      type: string
+      description: "Formatted prompt payload or instruction turn."
+    task_tier:
+      type: string
+      enum: ["fast", "standard", "complex", "local"]
+      description: "Inference tier determining target model selection."
+  required:
+    - prompt_payload

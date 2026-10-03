@@ -1,0 +1,21 @@
+spec_version: "0.1.0"
+name: "openchamber"
+version: "2.1.0"
+description: "AI-native coding environment, interactive developer workspace, and multi-model agent execution harness across Web, Desktop, and CLI."
+author: "OpenChamber Contributors <support@openchamber.io>"
+license: "MIT"
+metadata:
+  domain: "Developer Tools / AI Coding Workspace, Multi-Model Terminal & Agent IDE Harness"
+  category: "Developer Tools"
+  framework: "OpenChamber / Electron / React / TypeScript"
+  language: "TypeScript"
+skills:
+  - "workspace-orchestration"
+  - "terminal-session-management"
+  - "code-diff-inspection"
+  - "multi-model-routing"
+tools:
+  - "workspace-session-manager"
+  - "terminal-pty-executor"
+  - "code-diff-inspector"
+  - "model-provider-router"

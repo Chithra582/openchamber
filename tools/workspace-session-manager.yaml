@@ -1,0 +1,14 @@
+name: "workspace-session-manager"
+description: "Manages developer workspace state, active file trees, project configurations, and extension registries."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum: ["init", "load", "save", "sync-settings", "close"]
+      description: "Lifecycle action to perform on the workspace."
+    workspace_path:
+      type: string
+      description: "Absolute file system path to the target workspace root."
+  required:
+    - action

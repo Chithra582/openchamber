@@ -1,0 +1,17 @@
+name: "code-diff-inspector"
+description: "Computes, inspects, and verifies unified code diffs against local git repositories prior to applying patches."
+input_schema:
+  type: object
+  properties:
+    file_path:
+      type: string
+      description: "Target source file path relative to workspace root."
+    patch_content:
+      type: string
+      description: "Unified diff chunk or replacement text payload."
+    dry_run:
+      type: boolean
+      description: "Simulate diff application without writing to disk."
+  required:
+    - file_path
+    - patch_content

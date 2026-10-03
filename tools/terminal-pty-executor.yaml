@@ -1,0 +1,16 @@
+name: "terminal-pty-executor"
+description: "Spawns and manages pseudo-terminal (PTY) shell sessions to execute sandboxed development commands."
+input_schema:
+  type: object
+  properties:
+    command:
+      type: string
+      description: "Shell command line string to execute inside the PTY session."
+    timeout_seconds:
+      type: integer
+      description: "Maximum execution duration before terminating the process."
+    cwd:
+      type: string
+      description: "Working directory for the shell execution."
+  required:
+    - command
